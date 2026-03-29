@@ -254,17 +254,17 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
 
   <div class="right">
     <div class="sec">
-      <div class="stitle">📍 Fırlatma Üssü</div>
+      <div class="stitle"> Fırlatma Üssü</div>
       <div class="sel-us" id="selUs"><span class="no-sel">Haritadan bir üs seçin →</span></div>
     </div>
 
     <div class="sec">
-      <div class="stitle">📅 Fırlatma Tarihi</div>
+      <div class="stitle"> Fırlatma Tarihi</div>
       <input type="date" class="date-in" id="tarihIn">
     </div>
 
     <div class="sec">
-      <div class="stitle">📦 Yük & Malzeme Planlaması</div>
+      <div class="stitle"> Yük & Malzeme Planlaması</div>
       <div id="ulkeOneriKutu" style="display:none;"></div>
       <div class="yuk-panel">
         <div class="kap-header">
@@ -272,19 +272,19 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
           <div class="kap-val" id="yukKg">0 / 22,800 kg</div>
         </div>
         <div class="yuk-tabs">
-          <button class="yuk-tab active" onclick="tabSec('parca',this)">🔧 YEDEK PARÇA</button>
-          <button class="yuk-tab" onclick="tabSec('arastirma',this)">🔬 ARAŞTIRMA</button>
-          <button class="yuk-tab" onclick="tabSec('gida',this)">🍱 GIDA</button>
+          <button class="yuk-tab active" onclick="tabSec('parca',this)"> YEDEK PARÇA</button>
+          <button class="yuk-tab" onclick="tabSec('arastirma',this)"> ARAŞTIRMA</button>
+          <button class="yuk-tab" onclick="tabSec('gida',this)"> GIDA</button>
         </div>
         <div class="yuk-content" id="yukContent"><div style="padding:12px;font-family:var(--mono);font-size:.65rem;color:var(--muted);">Önce bir araç seçin...</div></div>
       </div>
-      <div class="uyari" id="kapUyari">⚠️ KAPASİTE AŞILDI! Yük limitini geçtiniz.</div>
+      <div class="uyari" id="kapUyari">️ KAPASİTE AŞILDI! Yük limitini geçtiniz.</div>
     </div>
 
     <div class="sec">
       <button class="btn-sim" id="btnSim" onclick="simBaslat()" disabled>▶ SİMÜLASYONU ONAYLA</button>
     </div>
-    <div class="loading" id="loading">⏳ VERİLER ANALİZ EDİLİYOR...</div>
+    <div class="loading" id="loading"> VERİLER ANALİZ EDİLİYOR...</div>
 
     <div class="result-wrap" id="resultWrap">
 
@@ -301,14 +301,14 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
         <div class="met"><div class="met-lbl">🌡️ Sıcaklık</div><div class="met-val" id="mSic">—</div><div class="met-unit">°C</div></div>
         <div class="met"><div class="met-lbl">💨 Rüzgar</div><div class="met-val" id="mRuz">—</div><div class="met-unit">m/s</div></div>
         <div class="met"><div class="met-lbl">💧 Nem</div><div class="met-val" id="mNem">—</div><div class="met-unit">%</div></div>
-        <div class="met"><div class="met-lbl">🌧️ Yağış</div><div class="met-val" id="mYag">—</div><div class="met-unit">mm/h</div></div>
+        <div class="met"><div class="met-lbl">️🌧️ Yağış</div><div class="met-val" id="mYag">—</div><div class="met-unit">mm/h</div></div>
         <div class="met"><div class="met-lbl">🗻 Rakım</div><div class="met-val" id="mRak">—</div><div class="met-unit">m</div></div>
         <div class="met"><div class="met-lbl">📦 Toplam Yük</div><div class="met-val" id="mYuk">—</div><div class="met-unit">kg</div></div>
       </div>
 
       <!-- SAATLİK HAVA PENCERESİ (YENİ) -->
       <div class="hourly-sec" id="saatlikSec">
-        <div class="stitle">🕐 24 Saatlik Fırlatma Penceresi</div>
+        <div class="stitle"> 24 Saatlik Fırlatma Penceresi</div>
         <div class="pencere-banner">
           <div>
             <div style="font-family:var(--mono);font-size:.55rem;color:var(--muted);margin-bottom:2px;">EN UYGUN FIRLATMA SAATİ</div>
@@ -325,7 +325,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
       <!-- UZAY ÇÖPÜ ANALİZİ (YENİ) -->
       <div class="debris-sec" id="debrisSec">
         <div class="debris-header">
-          <div class="stitle" style="margin-bottom:0;">🛰️ Uzay Çöpü Çarpışma Riski</div>
+          <div class="stitle" style="margin-bottom:0;">️ Uzay Çöpü Çarpışma Riski</div>
           <div class="debris-orbit" id="debrisOrbit">—</div>
         </div>
         <div class="debris-gauge">
@@ -348,7 +348,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
       <div class="rows">
         <div class="stitle">💰 Maliyet Analizi</div>
         <div class="row"><span class="rl">Temel Yakıt</span><span class="rv" id="malTemel">—</span></div>
-        <div class="row"><span class="rl">⚖️ Yük Yakıt Eki</span><span class="rv" id="malYukEk">—</span></div>
+        <div class="row"><span class="rl"> Yük Yakıt Eki</span><span class="rv" id="malYukEk">—</span></div>
         <div class="row"><span class="rl">Yedek Parça/Bakım</span><span class="rv" id="malParca">—</span></div>
         <div class="row"><span class="rl">Malzeme Alımı</span><span class="rv" id="malMal">—</span></div>
         <div class="row total"><span class="rl">GENEL TOPLAM</span><span class="rv" id="malToplam">—</span></div>
@@ -356,7 +356,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
 
       <!-- TAŞIMA -->
       <div class="sec">
-        <div class="stitle">🚛 Taşıma Planı</div>
+        <div class="stitle"> Taşıma Planı</div>
         <div class="tasima-kart">
           <div class="tas-yontem" id="tasYon">—</div>
           <div class="row"><span class="rl">Mesafe</span><span class="rv" id="tasMes">—</span></div>
@@ -369,22 +369,22 @@ body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100
 
       <!-- DÜŞME BÖLGELERİ -->
       <div class="rows">
-        <div class="stitle">🎯 Olası Düşme Bölgeleri</div>
+        <div class="stitle"> Olası Düşme Bölgeleri</div>
         <div id="dusmeList"></div>
       </div>
 
       <!-- KARBON -->
       <div class="sec">
-        <div class="stitle">🌱 Karbon Emisyon Analizi</div>
+        <div class="stitle"> Karbon Emisyon Analizi</div>
         <div class="karbon-row">
           <div>
             <div style="font-family:var(--mono);font-size:.55rem;color:var(--muted);margin-bottom:3px;">SÜRDÜRÜLEBİLİRLİK</div>
             <div class="karbon-daire" id="kSkor">—</div>
           </div>
           <div style="flex:1">
-            <div class="row"><span class="rl">🔥 Yanma CO₂</span><span class="rv" id="kYanma">—</span></div>
-            <div class="row"><span class="rl">🏭 Üretim CO₂</span><span class="rv" id="kUretim">—</span></div>
-            <div class="row"><span class="rl">🌫️ Soot</span><span class="rv" id="kSoot">—</span></div>
+            <div class="row"><span class="rl"> Yanma CO₂</span><span class="rv" id="kYanma">—</span></div>
+            <div class="row"><span class="rl"> Üretim CO₂</span><span class="rv" id="kUretim">—</span></div>
+            <div class="row"><span class="rl"> Soot</span><span class="rv" id="kSoot">—</span></div>
             <div class="row total"><span class="rl">TOPLAM CO₂</span><span class="rv" id="kToplam">—</span></div>
           </div>
         </div>
@@ -479,7 +479,7 @@ function ulkeOneriGoster(usId) {
   const d = ULKE_ONERI[usId];
   if (!d) { kutu.style.display='none'; return; }
 
-  const tabIsim = {parca:'🔧 YEDEK PARÇA', arastirma:'🔬 ARAŞTIRMA', gida:'🍱 GIDA'};
+  const tabIsim = {parca:' YEDEK PARÇA', arastirma:' ARAŞTIRMA', gida:' GIDA'};
   const satirlar = d.malzemeler.map((m,i) => `
     <div class="ulke-oneri-satir" id="oneri-satir-${i}">
       <div class="ulke-oneri-bilgi">
@@ -789,13 +789,13 @@ function sonucGoster(v){
   document.getElementById('kUretim').textContent=k.uretim_co2_ton+' ton';
   document.getElementById('kSoot').textContent=k.soot_co2_esdeger_ton+' ton';
   document.getElementById('kToplam').textContent=k.toplam_co2_ton+' ton CO₂';
-  document.getElementById('yakitBadge').textContent='⛽ '+k.yakit_tipi+(k.yeniden_kullanilabilir?'  ♻️ Yeniden Kullanılabilir':'  🗑️ Tek Kullanımlık');
+  document.getElementById('yakitBadge').textContent=' '+k.yakit_tipi+(k.yeniden_kullanilabilir?'   Yeniden Kullanılabilir':'   Tek Kullanımlık');
 
   let oh='';
-  if(v.risk_oneri){const o=v.risk_oneri;oh+=`<div class="oneri risk-o"><div class="oneri-hdr">💡 DAHA AZ RİSKLİ ALTERNATİF</div><div class="oneri-body">${o.us_emoji} <b>${o.us}</b> üssünden ${o.arac_emoji} <b>${o.arac}</b> ile fırlatma yapılırsa risk <b>%${o.risk}</b> olur.</div><div class="oneri-fark">▼ %${o.fark} daha az risk</div></div>`;}
-  if(v.ucuz_tasima){const o=v.ucuz_tasima;const info=o.tip==='us'?`${o.emoji} <b>${o.us}</b> üssüne taşınırsa`:`${o.emoji} <b>${o.arac}</b> aracıyla taşınırsa`;oh+=`<div class="oneri tas-o"><div class="oneri-hdr">🚛 DAHA UCUZ TAŞIMA</div><div class="oneri-body">${info} taşıma maliyeti <b>${fmt(o.maliyet)}</b> olur. (${o.sure} gün)</div><div class="oneri-fark">▼ ${fmt(o.fark)} tasarruf</div></div>`;}
-  if(v.karbon_oneri){const o=v.karbon_oneri;oh+=`<div class="oneri kar-o"><div class="oneri-hdr">🌿 DAHA YEŞİL ALTERNATİF</div><div class="oneri-body">${o.emoji} <b>${o.arac}</b> (${o.yakit_tipi}) kullanılırsa <b>${o.co2_ton} ton CO₂</b> emisyon oluşur.</div><div class="oneri-fark">▼ ${o.fark_ton} ton CO₂ daha az (%${o.yuzde})</div></div>`;}
-  if(!oh){oh=`<div class="oneri opt"><div class="oneri-hdr">✅ OPTİMAL SEÇİM</div><div class="oneri-body">Mevcut kombinasyon en iyi seçenekler arasında.</div></div>`;}
+  if(v.risk_oneri){const o=v.risk_oneri;oh+=`<div class="oneri risk-o"><div class="oneri-hdr"> DAHA AZ RİSKLİ ALTERNATİF</div><div class="oneri-body">${o.us_emoji} <b>${o.us}</b> üssünden ${o.arac_emoji} <b>${o.arac}</b> ile fırlatma yapılırsa risk <b>%${o.risk}</b> olur.</div><div class="oneri-fark">▼ %${o.fark} daha az risk</div></div>`;}
+  if(v.ucuz_tasima){const o=v.ucuz_tasima;const info=o.tip==='us'?`${o.emoji} <b>${o.us}</b> üssüne taşınırsa`:`${o.emoji} <b>${o.arac}</b> aracıyla taşınırsa`;oh+=`<div class="oneri tas-o"><div class="oneri-hdr"> DAHA UCUZ TAŞIMA</div><div class="oneri-body">${info} taşıma maliyeti <b>${fmt(o.maliyet)}</b> olur. (${o.sure} gün)</div><div class="oneri-fark">▼ ${fmt(o.fark)} tasarruf</div></div>`;}
+  if(v.karbon_oneri){const o=v.karbon_oneri;oh+=`<div class="oneri kar-o"><div class="oneri-hdr"> DAHA YEŞİL ALTERNATİF</div><div class="oneri-body">${o.emoji} <b>${o.arac}</b> (${o.yakit_tipi}) kullanılırsa <b>${o.co2_ton} ton CO₂</b> emisyon oluşur.</div><div class="oneri-fark">▼ ${o.fark_ton} ton CO₂ daha az (%${o.yuzde})</div></div>`;}
+  if(!oh){oh=`<div class="oneri opt"><div class="oneri-hdr"> OPTİMAL SEÇİM</div><div class="oneri-body">Mevcut kombinasyon en iyi seçenekler arasında.</div></div>`;}
   document.getElementById('oneriBox').innerHTML=oh;
 
   document.getElementById('resultWrap').style.display='block';
